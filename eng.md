@@ -29,6 +29,7 @@ Realspace is what the camera sees — overlaid with augmented units.
 ### Begin with a Skeleton
 
 > git checkout example_0
+
 > [live][17], [diff][18], [tag][19]
 
 We will organize our code into modules using [RequireJS][20]. The starting point
@@ -59,6 +60,7 @@ from this foundation.
 ### Give the Skeleton an Eye
 
 > git checkout example_1
+
 > [live][22], [diff][23], [tag][24]
 
 AR games require a realtime video feed: [HTML5][25]‘s [WebRTC][26] provides this
@@ -80,6 +82,7 @@ frame at each tick.
 ### Something Akin to a Visual Cortex
 
 > git checkout example_2
+
 > [live][35], [diff][36], [tag][37]
 
 JSARToolkit is an augmented reality engine. It identifies and describes the
@@ -156,6 +159,7 @@ As can be deduced from the code, our application [now detects markers][53] and
 ### Reality as a Plane
 
 > git checkout example_3
+
 > [live][55], [diff][56], [tag][57]
 
 An augmented reality display consists of a *reality* view overlaid with 3D
@@ -189,6 +193,7 @@ step is to augment it!
 ### Augmenting Reality
 
 > git checkout example_4
+
 > [live][65], [diff][66], [tag][67], [movie][68]
 
 We’re ready to add augmented components to the mix: these will take the form of
@@ -292,6 +297,7 @@ three steps.
 #### Step 1: Open the Cube
 
 > git checkout example_5
+
 > [live][79], [diff][80], [tag][81], [movie][82]
 
 First we remove the top face of the cube to create an open box. This is
@@ -307,6 +313,7 @@ clear why.
 #### Step 2: Cover the Cube in Blue
 
 > git checkout example_6
+
 > [live][86], [diff][87], [tag][88], [movie][89]
 
 So what’s missing? We need to hide the part of the box which juts out from
@@ -336,6 +343,7 @@ This blue jacket doesn’t yet contribute much to the “warphole” illusion.
 #### Step 3: Cover the Cube In Invisibility
 
 > git checkout example_7
+
 > [live][96], [diff][97], [tag][98], [movie][99]
 
 The illusion requires that the blue jacket be invisible while retaining its
@@ -367,6 +375,7 @@ This results in a much more convincing illusion.
 ### Selecting Holes
 
 > git checkout example_8
+
 > [live][102], [diff][103], [tag][104]
 
 An AR Game allows the user to select which warphole to open by positioning the
@@ -398,6 +407,7 @@ center of the screen.
 ## Refactoring
 
 > git checkout example_9
+
 > [live][108], [diff][109], [tag][110]
 
 Our augmented reality functionality is essentially complete. We are able to
@@ -413,6 +423,7 @@ place it into a dedicated module named [realspace.js][111], leaving our
 ## Panel of Flatspace
 
 > git checkout example_10
+
 > [live][113], [diff][114], [tag][115]
 
 In An AR Game the player’s task is to transfer play pieces from a 2D plane to a
@@ -424,6 +435,7 @@ skeletal pattern][116] similar to those of [application.js][117] and
 ### The Physics
 
 > git checkout example_11
+
 > [live][119], [diff][120], [tag][121]
 
 The [physics][122] of the realspace view comes free with [nature][123]. But the
@@ -454,6 +466,7 @@ we’ll need to create a canvas and then supply the VTable with draw methods.
 #### Step 1: Make A Metric Canvas
 
 > git checkout example_12
+
 > [live][135], [diff][136], [tag][137]
 
 The `canvas` will map a Box2D world. A canvas uses pixels as its unit of
@@ -488,6 +501,7 @@ of CSS in [application.css][144] puts them side-by-side:
 #### Step 2: Assemble A Drafting Kit
 
 > git checkout example_13
+
 > [live][145], [diff][146], [tag][147]
 
 As mentioned previously, Box2D.js provides hooks for drawing a debug sketch of
@@ -511,6 +525,7 @@ to implement the game logic, building the system to be played.
 #### Creation
 
 > git checkout example_14
+
 > [live][153], [diff][154], [tag][155]
 
 Let’s liven up the simulation with some creation. Box2D Body construction is
@@ -536,6 +551,7 @@ Under contemplation it may bring to mind a [particular whale][160].
 #### Registration
 
 > git checkout example_15
+
 > [live][161], [diff][162], [tag][163]
 
 We must be able to keep track of the bodies populating flatworld. Box2D provides
@@ -553,6 +569,7 @@ wrapped-and-registered bodies][166].
 #### Collision
 
 > git checkout example_16
+
 > [live][167], [diff][168], [tag][169]
 
 Box2D collision detection is complicated because the native callback simply
@@ -594,6 +611,7 @@ object][173]:
 #### Deletion
 
 > git checkout example_17
+
 > [live][174], [diff][175], [tag][176]
 
 Removing bodies is complicated by the fact that Box2D does not allow calls to
@@ -622,6 +640,7 @@ Now the body is deleted on contact with the ground.
 #### Discerning
 
 > git checkout example_18
+
 > [live][183], [diff][184], [tag][185]
 
 When a collision is detected An AR Game needs to know what the object has
@@ -638,6 +657,7 @@ used for comparing objects. We will now add a conditional deletion to our game:
 ### A 2D Warphole
 
 > git checkout example_19
+
 > [live][187], [diff][188], [tag][189]
 
 We’ve already discussed the realspace warpholes, and now we’ll implement their
